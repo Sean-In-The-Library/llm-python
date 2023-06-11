@@ -1,5 +1,10 @@
 from llama_index import GPTSimpleVectorIndex, SimpleDirectoryReader
 from dotenv import load_dotenv
+import logging
+logging.basicConfig()
+logger = logging.getLogger(__name__)
+logger.setLevel(level=logging.DEBUG)
+logger.debug("Hello world")
 
 load_dotenv()
 
